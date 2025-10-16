@@ -24,13 +24,17 @@ public class Punto {
     public double getY() {
         return y;
     }
-    
-      public void mover(double cambioX, double cambioY) {
-        x = x + cambioX;
-        y = y + cambioY;
+
+    public void setX(double x) {
+        this.x = x;
     }
 
-    public String mostrarCoordenadas() {
+    public void setY(double y) {
+        this.y = y;
+    }
+    
+
+    public String toString() {
         return "(" + x + ", " + y + ")";
     }
 }
